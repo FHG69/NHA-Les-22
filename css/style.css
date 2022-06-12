@@ -16,6 +16,7 @@ img{
 html {
     overflow-y:scroll; /*Quick and dirty fix voor gelijke width*/
 }
+/*Basic waarden*/
 html, body{
   min-height: 100%;
   width:100%;
@@ -23,7 +24,9 @@ html, body{
   margin: 0px;
 }
 h1,p{
+
   text-align: center;
+  margin:20px
 }
 .container-sm {
     background-color: gray;
@@ -66,7 +69,7 @@ form input, textarea{
   margin-bottom: 20px;
 }
 section{
-  min-height: calc(100vh - 260px);
+  min-height: calc(100vh - 280px);
   display: block;
 
 }
@@ -79,8 +82,10 @@ section{
   color: black;
   border-color: black;
 }
-.navbar-brand:hover{cursor:default;}
-p {margin:30px}
-
+.navbar-brand:hover{
+  cursor:default;}
+p {
+  margin:20px
+}
 [class*="col"]{padding:0px;}
 .row{margin:0px}
