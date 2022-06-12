@@ -35,15 +35,15 @@
       <form action="https://formspree.io/f/xjvljygd" method="post">
         <div class="col-12">
           <label for="naam" class="form-label">Naam</label>
-          <input type="text" class="form-control" id="naam" placeholder="Naam" name="naam">
+          <input type="text" class="form-control" id="naam" placeholder="Naam" name="naam" required autocomplete="off">
         </div>
         <div class="col-md-12">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="E-mail" name="email">
+          <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" required>
         </div>
         <div class="col-12">
           <label for="tekst" class="form-label">Bericht</label>
-          <textarea class="form-control" id="tekst" rows="3" placeholder="Type hier uw tekst." name="tekst"></textarea>
+          <textarea class="form-control" id="tekst" rows="3" placeholder="Type hier uw tekst." name="tekst" required ></textarea>
         </div>
         <div class="col-12">
           <button type="submit" class="btn btn-primary">Verzenden</button>

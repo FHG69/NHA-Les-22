@@ -1,91 +1,104 @@
 
-img{
-  max-width:80%;
-  height: auto;
-  border: 1px solid black;
-  border-radius: 25px;
-  margin-top:40px;
-  margin-bottom: 40px;
-}
-/* full screen onder 576 px */
- @media only screen and (min-width: 576px)  {
-   .container-sm, section{
-     width: 100%;
-   }
-}
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Montserrat:wght@300;500;700&display=swap');
+
+/*Quick and dirty fix voor gelijke width*/
 html {
-    overflow-y:scroll; /*Quick and dirty fix voor gelijke width*/
+  overflow-y: scroll;
 }
-/*Basic waarden*/
-html, body{
+/* Basic waarden */
+html, body {
   min-height: 100%;
-  width:100%;
+  width: 100%;
   padding: 0px;
   margin: 0px;
 }
-h1,p{
+img {
+  max-width: 80%;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 
+}
+h1, p {
   text-align: center;
-  margin:20px
+  margin: 20px
+}
+p {
+  padding: 0 50px;
 }
 .container-sm {
-    background-color: gray;
-    padding: 0px;  /*Anders zijn header en footer te smal.*/
+  background-color: gray;
+  padding: 0px;  /*Anders zijn header en footer te smal.*/
 }
-.col{
+.col {
   text-align: center;
 }
 .navbar {
   background-color: #C0C0C0;
-  padding:10px;
+  padding: 10px;
 }
-.footer{
-  position:relative;
+.footer {
+  position: relative;
   height: 200px;
   background-color: #C0C0C0;
-  bottom:0px;
-  padding-bottom:0;
+  bottom: 0px;
+  padding-bottom: 0;
 }
-#copyright{
-  position:absolute;
-  bottom:0px;
-  right:0px;
+#copyright {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
   font-family: sans-serif;
-  color:black;
+  color: black;
   font-size: 12px;
   padding: 5px;
 }
 .nav-link:hover {
   color: #fff !important;
 }
-form{
-width:100%;
-padding-top:50px;
-padding-bottom: 150px;
-padding-left: 20%;
-padding-right: 20%;
+form {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
-form input, textarea{
+form input, textarea {
   margin-bottom: 20px;
 }
-section{
+section {
   min-height: calc(100vh - 280px);
   display: block;
-
 }
-.btn-primary{
+.btn-primary {
   background-color: black;
   border-color: white;
 }
-.btn-primary:hover{
+.btn-primary:hover {
   background-color: white;
   color: black;
   border-color: black;
 }
-.navbar-brand:hover{
-  cursor:default;}
-p {
-  margin:20px
+.navbar-brand:hover {
+  cursor: default;
 }
-[class*="col"]{padding:0px;}
-.row{margin:0px}
+p {
+  margin: 20px
+}
+[class*="col"] {
+  padding: 0px;
+}
+.row {
+  margin: 0px
+}
+.signature{
+  font-size: 4em;
+  font-family: 'Marck Script', cursive;
+  text-align: right;
+  vertical-align: baseline;
+  padding-right: 200px;
+  padding-top: 60px;
+
+}
