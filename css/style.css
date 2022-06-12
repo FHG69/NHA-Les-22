@@ -1,20 +1,21 @@
 
 img{
-max-width:80%;
+  max-width:80%;
   height: auto;
-
   border: 1px solid black;
   border-radius: 25px;
   margin-top:40px;
   margin-bottom: 40px;
 }
-
+/* full screen onder 576 px */
  @media only screen and (min-width: 576px)  {
    .container-sm, section{
      width: 100%;
    }
 }
-
+html {
+    overflow-y:scroll; /*Quick and dirty fix voor gelijke width*/
+}
 html, body{
   min-height: 100%;
   width:100%;
@@ -25,10 +26,8 @@ h1,p{
   text-align: center;
 }
 .container-sm {
-    display:block;
     background-color: gray;
-    padding: 0px;
-    justify-content: center;
+    padding: 0px;  /*Anders zijn header en footer te smal.*/
 }
 .col{
   text-align: center;
@@ -40,7 +39,6 @@ h1,p{
 .footer{
   position:relative;
   height: 200px;
-  width: inherit;
   background-color: #C0C0C0;
   bottom:0px;
   padding-bottom:0;
@@ -58,18 +56,19 @@ h1,p{
   color: #fff !important;
 }
 form{
-width:60vw;
-padding-top:100px;
+width:100%;
+padding-top:50px;
 padding-bottom: 150px;
-padding-left: 20vw;
-padding-right: 20vw;
+padding-left: 20%;
+padding-right: 20%;
 }
 form input, textarea{
   margin-bottom: 20px;
 }
 section{
+  min-height: calc(100vh - 260px);
   display: block;
-  height: 80%;
+
 }
 .btn-primary{
   background-color: black;
@@ -81,4 +80,7 @@ section{
   border-color: black;
 }
 .navbar-brand:hover{cursor:default;}
-p {margin: 50px}
+p {margin:30px}
+
+[class*="col"]{padding:0px;}
+.row{margin:0px}
